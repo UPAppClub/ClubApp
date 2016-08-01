@@ -6,6 +6,7 @@
 
     <string name="action_settings">Settings</string>
     <string name="title_activity_login">App Club Log In</string>
+    <string name="title_activity_register">Register</string>
 
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
