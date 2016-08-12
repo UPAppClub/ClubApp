@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:text="Eric Imperio"
+        android:text="UP AppClub" <!-- TODO: Name Getter-->
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" /><!-- Need User Getter-->
 
 
@@ -30,6 +30,6 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="imperio19@up.edu" /> <!--Need Email Getter -->
+        android:text="upappclub@gmail.com" /> <!--TODO: Email Getter -->
 
 </LinearLayout>
