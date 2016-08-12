@@ -9,11 +9,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.stormpath.sdk.Stormpath;
-import com.stormpath.sdk.StormpathCallback;
-import com.stormpath.sdk.models.RegisterParams;
-import com.stormpath.sdk.models.StormpathError;
-
 /**
  * Created by SBEBS on 7/31/2016.
  */
@@ -71,21 +66,7 @@ public class RegisterActivity extends AppCompatActivity {
         String enteredSurname = surname.getText().toString();
         String enteredEmail = email.getText().toString();
         String enteredPassword = password.getText().toString();
-        RegisterParams registerParams = new RegisterParams(enteredName, enteredSurname, enteredEmail, enteredPassword);
 
-        Stormpath.register(registerParams, new StormpathCallback<Void>() {
-            @Override
-            public void onSuccess(Void aVoid) {
-                progressDialog.dismiss();
-                onSignupSuccess();
-            }
-
-            @Override
-            public void onFailure(StormpathError error) {
-                progressDialog.dismiss();
-                onSignupFailed();
-            }
-        });
     }
 
     public void onSignupSuccess() {
